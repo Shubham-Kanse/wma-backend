@@ -1,0 +1,5 @@
+/Users/shubhamkanse/Projects/wma-backend/src/test/java/org/weather/metricsapi/WmaBackendApplicationTests.java
+/Users/shubhamkanse/Projects/wma-backend/src/test/java/org/weather/metricsapi/controller/fetch/v1/FetchControllerTest.java
+/Users/shubhamkanse/Projects/wma-backend/src/test/java/org/weather/metricsapi/controller/update/v1/UpdateControllerTest.java
+/Users/shubhamkanse/Projects/wma-backend/src/test/java/org/weather/metricsapi/service/fetch/v1/FetchServiceTest.java
+/Users/shubhamkanse/Projects/wma-backend/src/test/java/org/weather/metricsapi/service/update/v1/UpdateServiceTest.java

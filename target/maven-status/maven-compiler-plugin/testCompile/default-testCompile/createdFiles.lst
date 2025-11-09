@@ -1,0 +1,5 @@
+org/weather/metricsapi/WmaBackendApplicationTests.class
+org/weather/metricsapi/controller/update/v1/UpdateControllerTest.class
+org/weather/metricsapi/controller/fetch/v1/FetchControllerTest.class
+org/weather/metricsapi/service/fetch/v1/FetchServiceTest.class
+org/weather/metricsapi/service/update/v1/UpdateServiceTest.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.weather.metricsapi.controller.fetch.v1.FetchControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 s -- in org.weather.metricsapi.controller.fetch.v1.FetchControllerTest

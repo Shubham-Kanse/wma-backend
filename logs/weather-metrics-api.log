@@ -1,0 +1,161 @@
+2025-11-09T03:57:10.514Z  INFO [wma-backend,] 5029 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : Starting WmaBackendApplication using Java 17.0.15 with PID 5029 (/Users/shubhamkanse/Projects/Genesys/wma-backend/target/classes started by shubhamkanse in /Users/shubhamkanse/Projects/Genesys/wma-backend)
+2025-11-09T03:57:10.515Z  INFO [wma-backend,] 5029 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T03:57:11.591Z  INFO [wma-backend,] 5029 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : Started WmaBackendApplication in 1.213 seconds (process running for 1.377)
+2025-11-09T03:57:16.289Z  INFO [wma-backend,588de978-199a-4aa4-ad8a-976f39175a64] 5029 --- [wma-backend] [http-nio-8080-exec-1] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T03:57:16.477Z  INFO [wma-backend,588de978-199a-4aa4-ad8a-976f39175a64] 5029 --- [wma-backend] [http-nio-8080-exec-1] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 1 metrics, 4 data points processed
+2025-11-09T03:57:16.479Z  INFO [wma-backend,588de978-199a-4aa4-ad8a-976f39175a64] 5029 --- [wma-backend] [http-nio-8080-exec-1] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T03:57:17.478Z  INFO [wma-backend,0bc64aa3-d9ff-4388-bc83-74139e5ae468] 5029 --- [wma-backend] [http-nio-8080-exec-2] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T03:57:17.484Z  INFO [wma-backend,0bc64aa3-d9ff-4388-bc83-74139e5ae468] 5029 --- [wma-backend] [http-nio-8080-exec-2] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 1 metrics, 4 data points processed
+2025-11-09T03:57:17.485Z  INFO [wma-backend,0bc64aa3-d9ff-4388-bc83-74139e5ae468] 5029 --- [wma-backend] [http-nio-8080-exec-2] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:01.000Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : Starting UpdateControllerTest using Java 17.0.15 with PID 5420 (started by shubhamkanse in /Users/shubhamkanse/Projects/Genesys/wma-backend)
+2025-11-09T04:05:01.001Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : The following 1 profile is active: "test"
+2025-11-09T04:05:02.223Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : Started UpdateControllerTest in 1.33 seconds (process running for 1.67)
+2025-11-09T04:05:02.491Z  WARN [wma-backend,fa924c80-e42e-41c8-bda0-a5e58361c71f] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=fa924c80-e42e-41c8-bda0-a5e58361c71f]: 1 field errors - {sensorId=sensorId is required and cannot be blank}
+2025-11-09T04:05:02.511Z  WARN [wma-backend,81f9ca08-d71a-4448-bbf3-3db91807ae26] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=81f9ca08-d71a-4448-bbf3-3db91807ae26]: 1 field errors - {metrics.temperature=temperature is required}
+2025-11-09T04:05:02.515Z  WARN [wma-backend,ea8b0244-eb32-499a-b5a1-cb12ae57b526] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=ea8b0244-eb32-499a-b5a1-cb12ae57b526]: 1 field errors - {metrics.temperature=temperature must not exceed 100°C}
+2025-11-09T04:05:02.530Z  INFO [wma-backend,4407acd6-ba71-447e-aec2-f7b7fe7488c0] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:05:02.564Z  INFO [wma-backend,4407acd6-ba71-447e-aec2-f7b7fe7488c0] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=78bad9b3-df4e-4f72-8f00-5ec15e6b2b98, metrics_saved=8
+2025-11-09T04:05:02.564Z  INFO [wma-backend,4407acd6-ba71-447e-aec2-f7b7fe7488c0] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:05:02.570Z  INFO [wma-backend,36b46a9c-c710-4abb-ba5b-26517f1ab0af] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:05:02.572Z  INFO [wma-backend,36b46a9c-c710-4abb-ba5b-26517f1ab0af] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-minimal, snapshot=a163c207-64e5-4651-8584-c2c7e6ec9d99, metrics_saved=2
+2025-11-09T04:05:02.572Z  INFO [wma-backend,36b46a9c-c710-4abb-ba5b-26517f1ab0af] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:05:02.576Z  INFO [wma-backend,5531e907-3246-49d9-9666-1f49c74c34fb] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:05:02.578Z  INFO [wma-backend,5531e907-3246-49d9-9666-1f49c74c34fb] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=f8d651c6-0019-4663-b3e4-38cdafbbd758, metrics_saved=2
+2025-11-09T04:05:02.578Z  INFO [wma-backend,5531e907-3246-49d9-9666-1f49c74c34fb] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:05:02.579Z  INFO [wma-backend,955e54c6-c215-44b7-864d-61dcf23426d8] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:05:02.582Z  INFO [wma-backend,955e54c6-c215-44b7-864d-61dcf23426d8] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=339c108e-ac71-4c77-8d9a-6670fed719a7, metrics_saved=2
+2025-11-09T04:05:02.582Z  INFO [wma-backend,955e54c6-c215-44b7-864d-61dcf23426d8] 5420 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:05:02.657Z  WARN [wma-backend,2ee9845b-1210-454c-a3ce-0e7b820cdfb7] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=2ee9845b-1210-454c-a3ce-0e7b820cdfb7]: 1 field errors - {metrics=At least one metric must be specified}
+2025-11-09T04:05:02.661Z  WARN [wma-backend,96ff477e-f711-491c-9521-618e0f64a1b1] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=96ff477e-f711-491c-9521-618e0f64a1b1]: 1 field errors - {statistic=Statistic must be one of: min, max, sum, average}
+2025-11-09T04:05:02.673Z  INFO [wma-backend,bdb55a29-8040-44fa-8f8d-8d728560fa2a] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:02.673Z  WARN [wma-backend,bdb55a29-8040-44fa-8f8d-8d728560fa2a] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid date range: start=2025-11-09 is after end=2025-11-02
+2025-11-09T04:05:02.674Z  WARN [wma-backend,bdb55a29-8040-44fa-8f8d-8d728560fa2a] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Invalid argument [traceId=bdb55a29-8040-44fa-8f8d-8d728560fa2a]: startDate must be before or equal to endDate
+2025-11-09T04:05:02.675Z  INFO [wma-backend,30718cb6-7c97-4e6a-b55f-bf95d974c510] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:02.675Z  WARN [wma-backend,30718cb6-7c97-4e6a-b55f-bf95d974c510] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Date range too long: 33 days
+2025-11-09T04:05:02.675Z  WARN [wma-backend,30718cb6-7c97-4e6a-b55f-bf95d974c510] 5420 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Invalid argument [traceId=30718cb6-7c97-4e6a-b55f-bf95d974c510]: Date range must not exceed 31 days
+2025-11-09T04:05:02.689Z  INFO [wma-backend,d306c949-6b76-4f38-82e9-80094a9319bd] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:02.934Z  INFO [wma-backend,d306c949-6b76-4f38-82e9-80094a9319bd] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:05:02.934Z  INFO [wma-backend,d306c949-6b76-4f38-82e9-80094a9319bd] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:02.947Z  INFO [wma-backend,02097d95-3646-43c0-a737-784259d11b8d] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:02.971Z  INFO [wma-backend,02097d95-3646-43c0-a737-784259d11b8d] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 1 data points processed
+2025-11-09T04:05:02.971Z  INFO [wma-backend,02097d95-3646-43c0-a737-784259d11b8d] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:02.983Z  INFO [wma-backend,1a4457da-a5bf-4c7e-8cba-e60c6ac40d02] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.005Z  INFO [wma-backend,1a4457da-a5bf-4c7e-8cba-e60c6ac40d02] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:05:03.005Z  INFO [wma-backend,1a4457da-a5bf-4c7e-8cba-e60c6ac40d02] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.007Z  INFO [wma-backend,f5dd69c6-20fa-4b4a-a71d-9ce6f69c576a] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.010Z  INFO [wma-backend,f5dd69c6-20fa-4b4a-a71d-9ce6f69c576a] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:05:03.011Z  INFO [wma-backend,f5dd69c6-20fa-4b4a-a71d-9ce6f69c576a] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.012Z  INFO [wma-backend,667a44c2-2620-491c-a9a6-a7842724749c] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.014Z  INFO [wma-backend,667a44c2-2620-491c-a9a6-a7842724749c] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:05:03.014Z  INFO [wma-backend,667a44c2-2620-491c-a9a6-a7842724749c] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.015Z  INFO [wma-backend,acc71218-3e21-4a41-9a56-ee961baba913] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.016Z  INFO [wma-backend,acc71218-3e21-4a41-9a56-ee961baba913] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:05:03.016Z  INFO [wma-backend,acc71218-3e21-4a41-9a56-ee961baba913] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.032Z  INFO [wma-backend,6f2938a2-3ae4-444c-bb0e-5ad826739f8e] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.051Z  INFO [wma-backend,6f2938a2-3ae4-444c-bb0e-5ad826739f8e] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 2 metrics, 4 data points processed
+2025-11-09T04:05:03.051Z  INFO [wma-backend,6f2938a2-3ae4-444c-bb0e-5ad826739f8e] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.060Z  INFO [wma-backend,581f2079-858b-46f0-b100-9a3770cd142e] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:05:03.079Z  INFO [wma-backend,581f2079-858b-46f0-b100-9a3770cd142e] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 1 data points processed
+2025-11-09T04:05:03.079Z  INFO [wma-backend,581f2079-858b-46f0-b100-9a3770cd142e] 5420 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:05:03.221Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-002, snapshot=5c54f29d-6f47-42bd-8568-68812e0f2322, metrics_saved=2
+2025-11-09T04:05:03.233Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=15d7d50c-4231-4e5c-bd2b-12657c499430, metrics_saved=8
+2025-11-09T04:05:03.237Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-003, snapshot=94001ea0-99de-4de5-a03a-eb2d65af583e, metrics_saved=4
+2025-11-09T04:05:03.329Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:05:03.332Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:05:03.335Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:05:03.337Z  WARN [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid statistic requested: invalid
+2025-11-09T04:05:03.340Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:05:03.343Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 2 metrics, 20 data points processed
+2025-11-09T04:05:03.346Z  WARN [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid date range: start=2025-01-15 is after end=2025-01-08
+2025-11-09T04:05:03.347Z  WARN [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Date range too long: 33 days
+2025-11-09T04:05:03.349Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:05:03.351Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:05:03.379Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : Starting WmaBackendApplicationTests using Java 17.0.15 with PID 5420 (started by shubhamkanse in /Users/shubhamkanse/Projects/Genesys/wma-backend)
+2025-11-09T04:05:03.380Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T04:05:03.739Z  INFO [wma-backend,] 5420 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : Started WmaBackendApplicationTests in 0.377 seconds (process running for 3.186)
+2025-11-09T04:10:38.720Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : Starting UpdateControllerTest using Java 17.0.15 with PID 5995 (started by shubhamkanse in /Users/shubhamkanse/Projects/wma-backend)
+2025-11-09T04:10:38.722Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : The following 1 profile is active: "test"
+2025-11-09T04:10:40.065Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateControllerTest   : Started UpdateControllerTest in 1.462 seconds (process running for 1.815)
+2025-11-09T04:10:40.341Z  WARN [wma-backend,17516395-5260-4335-9157-bbfa5a9e2f9c] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=17516395-5260-4335-9157-bbfa5a9e2f9c]: 1 field errors - {sensorId=sensorId is required and cannot be blank}
+2025-11-09T04:10:40.365Z  WARN [wma-backend,14cd580e-a2e6-4d74-96e6-f893bcbc8c45] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=14cd580e-a2e6-4d74-96e6-f893bcbc8c45]: 1 field errors - {metrics.temperature=temperature is required}
+2025-11-09T04:10:40.369Z  WARN [wma-backend,e0b7189d-db64-4a2f-833e-90f5089eeacb] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=e0b7189d-db64-4a2f-833e-90f5089eeacb]: 1 field errors - {metrics.temperature=temperature must not exceed 100°C}
+2025-11-09T04:10:40.377Z  INFO [wma-backend,f695e09b-9cb4-4d63-aa59-e8bca3707147] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:10:40.411Z  INFO [wma-backend,f695e09b-9cb4-4d63-aa59-e8bca3707147] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=11bb3ce3-3624-4af8-9bb5-b0f3f878697a, metrics_saved=8
+2025-11-09T04:10:40.411Z  INFO [wma-backend,f695e09b-9cb4-4d63-aa59-e8bca3707147] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:10:40.417Z  INFO [wma-backend,0f267eb3-a40c-4eca-b2b0-04b6c99ce440] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:10:40.420Z  INFO [wma-backend,0f267eb3-a40c-4eca-b2b0-04b6c99ce440] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-minimal, snapshot=2b21ed8d-5775-4fc3-9672-dbecb020f715, metrics_saved=2
+2025-11-09T04:10:40.420Z  INFO [wma-backend,0f267eb3-a40c-4eca-b2b0-04b6c99ce440] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:10:40.426Z  INFO [wma-backend,e6611356-94d0-4dac-830f-111391455eff] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:10:40.428Z  INFO [wma-backend,e6611356-94d0-4dac-830f-111391455eff] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=d567502e-82f4-470f-b169-4838c7b16b90, metrics_saved=2
+2025-11-09T04:10:40.428Z  INFO [wma-backend,e6611356-94d0-4dac-830f-111391455eff] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:10:40.430Z  INFO [wma-backend,557ab62c-ec03-4e99-a500-141bcb11be1e] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Received update request
+2025-11-09T04:10:40.432Z  INFO [wma-backend,557ab62c-ec03-4e99-a500-141bcb11be1e] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=32827d93-3b72-4c2c-8ffd-f52236674c93, metrics_saved=2
+2025-11-09T04:10:40.432Z  INFO [wma-backend,557ab62c-ec03-4e99-a500-141bcb11be1e] 5995 --- [wma-backend] [main] o.w.m.c.update.v1.UpdateController       : Successfully ingested
+2025-11-09T04:10:40.507Z  WARN [wma-backend,665b7175-711d-4720-9b50-866d707ef6a4] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=665b7175-711d-4720-9b50-866d707ef6a4]: 1 field errors - {metrics=At least one metric must be specified}
+2025-11-09T04:10:40.511Z  WARN [wma-backend,dd6d95ba-499d-47ff-9ad7-8a0dc1910704] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Validation failed [traceId=dd6d95ba-499d-47ff-9ad7-8a0dc1910704]: 1 field errors - {statistic=Statistic must be one of: min, max, sum, average}
+2025-11-09T04:10:40.524Z  INFO [wma-backend,3602d8dc-691c-4d4e-8668-719357f656fa] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.524Z  WARN [wma-backend,3602d8dc-691c-4d4e-8668-719357f656fa] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid date range: start=2025-11-09 is after end=2025-11-02
+2025-11-09T04:10:40.524Z  WARN [wma-backend,3602d8dc-691c-4d4e-8668-719357f656fa] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Invalid argument [traceId=3602d8dc-691c-4d4e-8668-719357f656fa]: startDate must be before or equal to endDate
+2025-11-09T04:10:40.525Z  INFO [wma-backend,1c54d012-3d57-4227-8876-30e5091b76ce] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.525Z  WARN [wma-backend,1c54d012-3d57-4227-8876-30e5091b76ce] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Date range too long: 33 days
+2025-11-09T04:10:40.525Z  WARN [wma-backend,1c54d012-3d57-4227-8876-30e5091b76ce] 5995 --- [wma-backend] [main] o.w.m.exception.GlobalExceptionHandler   : Invalid argument [traceId=1c54d012-3d57-4227-8876-30e5091b76ce]: Date range must not exceed 31 days
+2025-11-09T04:10:40.539Z  INFO [wma-backend,b8551efe-7d20-40df-8d4a-62b186b93575] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.863Z  INFO [wma-backend,b8551efe-7d20-40df-8d4a-62b186b93575] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:10:40.863Z  INFO [wma-backend,b8551efe-7d20-40df-8d4a-62b186b93575] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.878Z  INFO [wma-backend,8f970c35-db77-4307-8f44-18d964bbaeba] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.903Z  INFO [wma-backend,8f970c35-db77-4307-8f44-18d964bbaeba] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 1 data points processed
+2025-11-09T04:10:40.904Z  INFO [wma-backend,8f970c35-db77-4307-8f44-18d964bbaeba] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.916Z  INFO [wma-backend,86a9a9b3-4964-4932-abdd-73d65820715f] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.938Z  INFO [wma-backend,86a9a9b3-4964-4932-abdd-73d65820715f] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:10:40.939Z  INFO [wma-backend,86a9a9b3-4964-4932-abdd-73d65820715f] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.940Z  INFO [wma-backend,c1ad5562-4f4a-4069-ba17-74d3e287dc33] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.943Z  INFO [wma-backend,c1ad5562-4f4a-4069-ba17-74d3e287dc33] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:10:40.943Z  INFO [wma-backend,c1ad5562-4f4a-4069-ba17-74d3e287dc33] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.945Z  INFO [wma-backend,97981254-05b8-462d-8d1e-70420202677d] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.946Z  INFO [wma-backend,97981254-05b8-462d-8d1e-70420202677d] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:10:40.946Z  INFO [wma-backend,97981254-05b8-462d-8d1e-70420202677d] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.947Z  INFO [wma-backend,325e3c31-87ff-4378-a9b0-625e6d54afd2] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.948Z  INFO [wma-backend,325e3c31-87ff-4378-a9b0-625e6d54afd2] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 2 data points processed
+2025-11-09T04:10:40.948Z  INFO [wma-backend,325e3c31-87ff-4378-a9b0-625e6d54afd2] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.960Z  INFO [wma-backend,ec1a5753-a419-4d51-9aac-847fd3c72e80] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:40.979Z  INFO [wma-backend,ec1a5753-a419-4d51-9aac-847fd3c72e80] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 2 metrics, 4 data points processed
+2025-11-09T04:10:40.979Z  INFO [wma-backend,ec1a5753-a419-4d51-9aac-847fd3c72e80] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:40.988Z  INFO [wma-backend,20fecfc4-ae61-4e39-9ac6-8aa421ce5563] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetching request
+2025-11-09T04:10:41.002Z  INFO [wma-backend,20fecfc4-ae61-4e39-9ac6-8aa421ce5563] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 1 data points processed
+2025-11-09T04:10:41.002Z  INFO [wma-backend,20fecfc4-ae61-4e39-9ac6-8aa421ce5563] 5995 --- [wma-backend] [main] o.w.m.c.fetch.v1.FetchController         : Fetch query completed
+2025-11-09T04:10:41.147Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-002, snapshot=09f20633-3b83-462f-abcf-3003d66a3a98, metrics_saved=2
+2025-11-09T04:10:41.158Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-001, snapshot=758983c0-413f-45a0-b6cc-7c16843f70d0, metrics_saved=8
+2025-11-09T04:10:41.162Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.update.v1.UpdateService    : Ingestion complete: sensor=sensor-003, snapshot=0e36afe9-3641-4be6-9553-d4cff7ddb57d, metrics_saved=4
+2025-11-09T04:10:41.249Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:10:41.252Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:10:41.254Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:10:41.257Z  WARN [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid statistic requested: invalid
+2025-11-09T04:10:41.259Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:10:41.262Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 1 sensors, 2 metrics, 20 data points processed
+2025-11-09T04:10:41.264Z  WARN [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Invalid date range: start=2025-01-15 is after end=2025-01-08
+2025-11-09T04:10:41.264Z  WARN [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Date range too long: 33 days
+2025-11-09T04:10:41.267Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 2 sensors, 1 metrics, 10 data points processed
+2025-11-09T04:10:41.269Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.service.fetch.v1.FetchService      : Fetch query successful: 0 sensors, 1 metrics, 0 data points processed
+2025-11-09T04:10:41.303Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : Starting WmaBackendApplicationTests using Java 17.0.15 with PID 5995 (started by shubhamkanse in /Users/shubhamkanse/Projects/wma-backend)
+2025-11-09T04:10:41.304Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T04:10:41.610Z  INFO [wma-backend,] 5995 --- [wma-backend] [main] o.w.m.WmaBackendApplicationTests         : Started WmaBackendApplicationTests in 0.326 seconds (process running for 3.359)
+2025-11-09T04:10:59.319Z  INFO [wma-backend,] 6037 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : Starting WmaBackendApplication using Java 17.0.15 with PID 6037 (/Users/shubhamkanse/Projects/wma-backend/target/classes started by shubhamkanse in /Users/shubhamkanse/Projects/wma-backend)
+2025-11-09T04:10:59.321Z  INFO [wma-backend,] 6037 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T04:11:00.487Z  WARN [wma-backend,] 6037 --- [wma-backend] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-09T04:11:00.506Z ERROR [wma-backend,] 6037 --- [wma-backend] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-09T04:11:38.439Z  INFO [wma-backend,] 6087 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : Starting WmaBackendApplication using Java 17.0.15 with PID 6087 (/Users/shubhamkanse/Projects/wma-backend/target/classes started by shubhamkanse in /Users/shubhamkanse/Projects/wma-backend)
+2025-11-09T04:11:38.440Z  INFO [wma-backend,] 6087 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T04:11:39.548Z  INFO [wma-backend,] 6087 --- [wma-backend] [main] o.w.metricsapi.WmaBackendApplication     : Started WmaBackendApplication in 1.256 seconds (process running for 1.42)
